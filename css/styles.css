@@ -1,10 +1,14 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    font-size: 22px;
 }
 
 header {
-    padding: 10px 20px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 nav {
@@ -15,23 +19,96 @@ nav {
 
 .nav-left a {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 26px;
+    color: black;
+    font-weight: bold;
+    
 }
 
 .nav-right a {
     text-decoration: none;
     margin-left: 12px;
-    font-size: 16px;
+    font-size: 24px;
+    color: blue;
 }
 
 .nav-right a:hover {
     text-decoration: underline;
 }
 
-.intro {
-    padding: 10px 20px; 
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
 }
 
-.projects {
-    padding: 10px 20px; 
+.intro, .projects {
+    margin-bottom: 40px;
+}
+
+.intro p {
+    margin-bottom: 10px;
+}
+
+.intro a {
+    text-decoration: none;
+    color: blue;
+}
+
+.intro a:hover {
+    text-decoration: underline;
+}
+
+.socials a {
+    margin-right: 10px; /* Adjust this value to increase or decrease spacing */
+    text-decoration: none;
+    color: blue;
+}
+
+.socials a:last-child {
+    margin-right: 0; /* Remove right margin for the last link */
+}
+
+.projects a {
+    text-decoration: none;
+}
+
+.projects a:hover{
+    text-decoration: underline;
+}
+
+.projects a:visited {
+    color: blue;
+}
+.projects h4 {
+    font-size: 22px;
+    margin-bottom: -10px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 40px 0;
+}
+
+.twitter-tweet {
+    margin-top: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+    .nav-left a {
+        font-size: 22px; /* Slightly reduce font size on mobile */
+    }
+
+    .nav-right a {
+        font-size: 20px; /* Slightly reduce font size on mobile */
+    }
+
+    .projects h4 {
+        font-size: 20px; /* Slightly reduce font size on mobile */
+    }
 }
