@@ -60,7 +60,7 @@ main {
 }
 
 .socials a {
-    margin-right: 10px; /* Adjust this value to increase or decrease spacing */
+    margin-right: 12px; /* Adjust this value to increase or decrease spacing */
     text-decoration: none;
     color: blue;
 }
@@ -109,6 +109,13 @@ hr {
 
 .about-content {
     max-width: 800px;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #ff7a00, #ff0069, #d300c5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
 }
 
 /* Media Queries */
