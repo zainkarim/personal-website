@@ -133,7 +133,6 @@ hr {
 .masonry {
     column-count: 2;
     column-gap: 10px;
-    max-width: 800px;
 }
 
 .masonry-item {
