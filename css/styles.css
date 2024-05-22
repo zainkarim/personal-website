@@ -126,6 +126,27 @@ hr {
     text-decoration: none;
 }
 
+.image img {
+    max-width: 100%;
+}
+
+.masonry {
+    column-count: 2;
+    column-gap: 10px;
+    max-width: 800px;
+}
+
+.masonry-item {
+    break-inside: avoid;
+    margin-bottom: 10px;
+}
+
+.masonry-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     body {
@@ -153,5 +174,10 @@ hr {
 
     .about-content {
         max-width: 100%;
+    }
+
+    .masonry {
+        column-count: 1;
+        column-gap: 10px;
     }
 }
