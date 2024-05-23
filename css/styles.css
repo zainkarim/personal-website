@@ -3,6 +3,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     font-size: 22px;
+    transition: background-color 1s ease, color 1s ease;
+    color: #000; /* Initial text color */
+}
+
+body.inverted {
+    color: #fff; /* Inverted text color */
 }
 
 header {
