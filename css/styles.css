@@ -11,6 +11,16 @@ body.inverted {
     color: #fff; /* Inverted text color */
 }
 
+code {
+    font-family: "Courier New", Courier, monospace; /* Use a monospaced font */
+    font-size: 100%; /* Set the font size */
+    color: crimson; /* Set the text color */
+    background-color: #f8f9fa; /* Set the background color */
+    padding: 4px 8px; /* Add padding for better spacing */
+    border-radius: 15px; /* Add rounded corners */
+    border: 1px solid #e0e0e0; /* Add a border */
+}
+
 header {
     padding-top: 40px;
     display: flex;
