@@ -1,10 +1,17 @@
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'SF Pro Display';
     line-height: 1.6;
     font-size: 22px;
     transition: background-color 1s ease, color 1s ease;
     color: #000; /* Initial text color */
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('/fonts/sf/SF-Pro-Display-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body.inverted {
@@ -12,12 +19,13 @@ body.inverted {
 }
 
 code {
-    font-family: "Courier New", Courier, monospace; /* Use a monospaced font */
+    font-family: "MonaspaceNeon-Regular", Courier, monospace; /* Use a monospaced font */
+    src: url('/fonts/neon/MonaspaceNeon-Regular.woff');
     font-size: 100%; /* Set the font size */
     color: crimson; /* Set the text color */
     background-color: #f8f9fa; /* Set the background color */
-    padding: 4px 8px; /* Add padding for better spacing */
-    border-radius: 15px; /* Add rounded corners */
+    padding: 2px 6px; /* Add padding for better spacing */
+    border-radius: 2px; /* Add rounded corners */
     border: 1px solid #e0e0e0; /* Add a border */
 }
 
