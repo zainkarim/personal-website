@@ -133,6 +133,10 @@ hr {
     margin: 40px 0;
 }
 
+strong {
+    font-family: 'SF Pro Display Semibold';
+}
+
 .twitter-tweet {
     margin-top: 20px;
 }
