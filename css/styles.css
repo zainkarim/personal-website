@@ -3,6 +3,7 @@ body {
     font-family: 'SF Pro Display';
     line-height: 1.6;
     font-size: 22px;
+    letter-spacing: 0.25px;
     transition: background-color 1s ease, color 1s ease;
     color: #000; /* Initial text color */
 }
@@ -14,17 +15,23 @@ body {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Monaspace Neon Light';
+    src: url('/fonts/neon/MonaspaceNeon-Light.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body.inverted {
     color: #fff; /* Inverted text color */
 }
 
 code {
-    font-family: "MonaspaceNeon-Regular", Courier, monospace; /* Use a monospaced font */
-    src: url('/fonts/neon/MonaspaceNeon-Regular.woff');
-    font-size: 100%; /* Set the font size */
-    color: crimson; /* Set the text color */
+    font-family: "Monaspace Neon Light", Courier, monospace; /* Use a monospaced font */
+    font-size: 85%; /* Set the font size */
+    color: rgb(55, 55, 55); /* Set the text color */
     background-color: #f8f9fa; /* Set the background color */
-    padding: 2px 6px; /* Add padding for better spacing */
+    padding: 4px 6px; /* Add padding for better spacing */
     border-radius: 2px; /* Add rounded corners */
     border: 1px solid #e0e0e0; /* Add a border */
 }
