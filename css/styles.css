@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'SF Pro Display';
+    font-family: 'SF Pro Display Regular';
     line-height: 1.6;
     font-size: 22px;
     letter-spacing: 0.25px;
@@ -9,7 +9,7 @@ body {
 }
 
 @font-face {
-    font-family: 'SF Pro Display';
+    font-family: 'SF Pro Display Regular';
     src: url('/fonts/sf/SF-Pro-Display-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
@@ -18,6 +18,13 @@ body {
 @font-face {
     font-family: 'Monaspace Neon Light';
     src: url('/fonts/neon/MonaspaceNeon-Light.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display Semibold';
+    src: url(/fonts/sf/SF-Pro-Display-Semibold.otf);
     font-weight: normal;
     font-style: normal;
 }
@@ -52,7 +59,7 @@ nav {
     text-decoration: none;
     font-size: 26px;
     color: black;
-    font-weight: bold;
+    font-family: 'SF Pro Display Semibold';;
     
 }
 
