@@ -61,16 +61,21 @@
             text-align: left;
         }
         .slideshow-container {
-            height: 500px;
-            overflow: hidden;
-            padding: 10px 10px;
-        }
-        .slides {
-            display: none;
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
+    position: relative;
+    width: 100%;
+    height: 500px; /* Fixed height */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slides {
+    position: absolute;
+    max-width: 100%;  /* Ensure it scales within container */
+    max-height: 100%; /* Prevent exceeding the set height */
+    object-fit: cover; /* Maintain aspect ratio while covering */
+}
         .controls {
             display: flex;
             justify-content: center;
@@ -93,15 +98,15 @@
             margin: 0;
         }
         @media (max-width: 768px) {
-    .slideshow-container {
-        padding: 5px; /* Reduce padding */
-        height: auto; /* Allow height to adjust */
+            .slideshow-container {
+        height: 60vh; /* Keep a fixed height to prevent content shift */
+        display: flex;
+        align-items: center; /* Center images vertically */
+        justify-content: center;
+        overflow: hidden;
     }
 
-    .slides {
-        height: auto; /* Make images scale properly */
-        max-height: 60vh; /* Ensure they don't take up too much space */
-    }
+    
 
     .controls {
         margin-top: 20px; /* Reduce spacing */
@@ -145,7 +150,7 @@
             <img class="slides" src="images/photography/night car/trees-house.jpg" alt="Photo 7">
             <img class="slides" src="images/photography/night car/tree.jpg" alt="Photo 8">
         </div>
-        
+        å
         <div class="controls">
             <button class="prev" onclick="changeSlide(-1)" aria-label="Previous slide">&lt;</button>
             <button class="next" onclick="changeSlide(1)" aria-label="Next slide">&gt;</button>
