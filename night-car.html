@@ -24,7 +24,6 @@
 
     .navbar {
         background-color: #000; /* Slightly lighter black for contrast */
-
     }
 
     .navbar a {
@@ -93,6 +92,32 @@
             text-align: center;
             margin: 0;
         }
+        @media (max-width: 768px) {
+    .slideshow-container {
+        padding: 5px; /* Reduce padding */
+        height: auto; /* Allow height to adjust */
+    }
+
+    .slides {
+        height: auto; /* Make images scale properly */
+        max-height: 60vh; /* Ensure they don't take up too much space */
+    }
+
+    .controls {
+        margin-top: 20px; /* Reduce spacing */
+    }
+
+    .prev, .next {
+        font-size: 20px; /* Slightly smaller button size */
+        padding: 10px; /* Less padding to make them fit better */
+    }
+
+    .project-description {
+        padding: 10px; /* Slightly reduce padding */
+        margin-bottom: 30px; /* Reduce bottom spacing */
+    }
+}
+
     </style>
 </head>
 
