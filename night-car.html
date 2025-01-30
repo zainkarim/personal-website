@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zain karim</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zain karim</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+    background-color: #000;
+    color: #fff;
+    }
+
+    .navbar {
+        background-color: #000; /* Slightly lighter black for contrast */
+        padding: 10px 0;
+    }
+
+    .navbar a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .navbar a:hover {
+        text-decoration: underline;
+    }
+
+    .slideshow-container {
+        background-color: #000; /* Dark background for the slideshow */
+        padding: 10px 20px;
+    }
+
+    .controls .prev, .controls .next {
+        color: #fff;
+    }
+
+    .project-description {
+        background-color: #000;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .copyright {
+        color: #fff; /* Slightly dimmed color */
+    }
+
+        .slideshow-container, .project-description {
+            position: relative;
+            width: calc(100% - 40px);
+            margin: auto;
+            text-align: left;
+        }
+        .slideshow-container {
+            height: 500px;
+            overflow: hidden;
+            padding: 10px 10px;
+        }
+        .slides {
+            display: none;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .controls {
+            display: flex;
+            justify-content: center;
+            margin-top: 5px;
+        }
+        .prev, .next {
+            font-size: 24px;
+            background: none;
+            color: black;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .project-description {
+            margin-bottom: 50px;
+        }
+        .copyright {
+            font-size: 18px;
+            text-align: center;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="index.html">zain karim ⠵</a>
+            </div>
+            <div class="nav-right">
+                <a href="about.html">about</a>
+                <a href="photo.html">photography</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="slideshow-container">
+            <img class="slides" src="images/photography/night car/fog.jpg" alt="Photo 1">
+            <img class="slides" src="images/photography/night car/howdy.jpg" alt="Photo 2">
+            <img class="slides" src="images/photography/night car/house.jpg" alt="Photo 3">
+            <img class="slides" src="images/photography/night car/snow-trees.jpg" alt="Photo 4">
+            <img class="slides" src="images/photography/night car/tree-window.jpg" alt="Photo 5">
+            <img class="slides" src="images/photography/night car/church-window.jpg" alt="Photo 6">
+            <img class="slides" src="images/photography/night car/trees-house.jpg" alt="Photo 7">
+            <img class="slides" src="images/photography/night car/tree-window.jpg" alt="Photo 8">
+        </div>
+        
+        <div class="controls">
+            <button class="prev" onclick="changeSlide(-1)" aria-label="Previous slide">&lt;</button>
+            <button class="next" onclick="changeSlide(1)" aria-label="Next slide">&gt;</button>
+        </div>
+        <section class="project-description">
+            <p>
+                "Night Car" is a personal journey through the quiet, in-between moments of the night, captured 
+                during aimless walks and drives between sunset and sunrise. The title draws inspiration from the 
+                Chinese idiom 开夜车 (kāi yè chē)—literally 'driving the night car'—a phrase commonly used to mean 
+                'burning the midnight oil' or working late into the night. What began as fleeting observations of 
+                the suburban landscape after dark revealed a deeper connection to the way light, shadow, and color 
+                shape familiar spaces into something more mysterious and contemplative. This project is a 
+                reflection on those nocturnal wanderings and the beauty found in the stillness of the night.
+            </p>
+        </section>
+
+        <section class="copyright">
+            <p>&copy zain karim 2025</p>
+        </section>
+    </main>
+    
+    <script>
+        let slideIndex = 0;
+        let slideTimer;
+    
+        function showSlides() {
+            let slides = document.getElementsByClassName("slides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            slides[slideIndex - 1].style.display = "block";
+        }
+    
+        function startSlideshow() {
+            clearTimeout(slideTimer);
+            showSlides();
+            slideTimer = setTimeout(startSlideshow, 8000); // Restart the slideshow every 8 seconds
+        }
+    
+        function changeSlide(n) {
+            let slides = document.getElementsByClassName("slides");
+            slideIndex += n;
+            
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            if (slideIndex < 1) { slideIndex = slides.length; }
+    
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+    
+            slides[slideIndex - 1].style.display = "block";
+            resetTimer(); // Reset the timer when user manually changes slides
+        }
+    
+        function resetTimer() {
+            clearTimeout(slideTimer);
+            slideTimer = setTimeout(startSlideshow, 8000);
+        }
+    
+        // Start the slideshow when the page loads
+        startSlideshow();
+    </script>
+</body>
+
+</html>
