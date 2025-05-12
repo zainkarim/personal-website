@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>zain karim</title>
+  <title>About — Zain Karim</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
+
 <body>
   <i id="mobile-menu-button" class="bi bi-three-dots"></i>
   <div class="container">
@@ -13,34 +16,81 @@
       <h1><a href="index.html">Zain Karim</a></h1>
       <!-- Navigation Links -->
       <div id="nav-content" class="full-menu">
-          <ul class="nav-links">
-            <li><a href="index.html">home</a></li>
-            <li><a href="art.html">art</a>
-                <ol class="work-title-list">
-                    <li><a href="night-car.html">NIGHT CAR</a></li>
-                </ol>
-            </li>
-            <li><a href="about.html">about</a></li>
-          </ul>
-          <div class="social-links">
-              <a href="https://www.instagram.com/zainkarim_/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
-              <a href="https://github.com/zainkarim" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
-              <a href="https://www.linkedin.com/in/zainkarim/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
-              <a href="mailto:zain@zainkarim.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-envelope"></i></a>
-          </div>
+        <ul class="nav-links">
+          <li><a href="index.html">HOME</a></li>
+          <ol class="work-title-list">
+            <li><a href="pixi-cli.html">pixi-cli</a></li>
+            <li><a href="dallas-skybot.html">@dallas_skybot</a></li>
+          </ol>
+          </li>
+          <li><a href="index.html">ART</a>
+            <ol class="work-title-list">
+              <li><a href="gallery.html">Gallery</li>
+              <li><a href="night-car.html">Night Car</a></li>
+            </ol>
+          </li>
+          <li><a href="about.html">about</a></li>
+          <ol>
+            <div class="social-links">
+              <ol class="work-title-list">
+                <li><a href="https://www.instagram.com/zainkarim_/" target="_blank"
+                    rel="noopener noreferrer" class = "instagram">Instagram</a></li>
+                <li><a href="https://github.com/zainkarim" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/zainkarim/" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="mailto:zain@zainkarim.com" target="_blank" rel="noopener noreferrer">Mail</a></li>
+              </ol>
+            </div>
+          </ol>
+        </ul>
       </div>
     </div>
     <div class="featured-column">
-        <!-- Gallery --> 
-        <div class="featured-proj col-full">
-          <a href="please_try_again">
-            <img src="projects/please-try-again/Please_Try_Again_Installation_32_Edgewood_Gallery_3.jpg" alt="Please Try Again">
-            <h2>Please Try Again</h2>
-          </a>
-          <p>2023</p>
-        </div>
+      <!-- About -->
+      <div class="col-2">
+        <img src="img/profile.jpeg" alt="A black and white photograph of Zain smiling.">
+      </div>
+
+      <div id="info-overview">
+        <p>Zain Karim</p>
+        <p>(he/him)</p>
+        <p>b. 2000, Texas, USA</p>
+      </div>
+      <div id="bio-text">
+        <p>Zain Karim is a student and photographer with a passion for problem-solving, fostering creativity through
+          software,
+          and exploring the intersection of art and technology. Currently studying computer science at the University of
+          Texas
+          at Dallas, his interests focus on computer vision, image processing algorithms, and computational photography.
+        </p>
+        <p>Zain's work spans creative coding projects and visual storytelling, aiming to bridge technical innovation
+          with
+          artistic expression. Whether designing algorithms that enhance digital images or capturing evocative moments
+          through
+          his lens, he seeks to challenge conventional boundaries between technology and art.</p>
+        <p>In addition to his technical pursuits, Zain enjoys cooking pasta, making photographs, and listening to jazz.
+          He
+          believes in blending creative inspiration with technical expertise to build solutions that are both innovative
+          and
+          human-centered.</p>
+      </div>
+      <div id="honors-container">
+        <button id="accordion-button">
+          <h2 id="accordion-label">+ Current Favorites</h2>
+        </button>
+        <ul id="select-honors" style="display: none">
+          <li><i>Musicians</i><br>Alice Coltrane<br>Sergei Rachmaninoff<br>Erykah Badu<br>MJ Lenderman<br>Ryuichi
+            Sakamoto</li>
+          <li><i>Books</i><br><i>Divine Flashes</i> by Fakhruddin Iraqi<br><i>Stories of Your Life and Others</i> by Ted
+            Chiang<br><i>Uncommon Places</i> by Stephen Shore<br><i>Never Let Me Go</i> by Ishiguro Kazuo<br><i>The
+              October Country</i> by Ray Bradbury
+          <li><i>Film/Television</i><br>Paris, Texas<br>Severance<br>Monsters, Inc.<br>About
+            Time<br>Succession
+        </ul>
+      </div>
     </div>
   </div>
   <script src="main.js"></script>
 </body>
+
 </html>
