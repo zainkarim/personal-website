@@ -22,8 +22,7 @@ a {
 }
 
 body {
-    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; */
-    font-family: "Manrope", sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 #mobile-menu-button {
@@ -63,16 +62,42 @@ body {
 }
 
 .work-title-list {
-    list-style-type: number;
-    padding-left: 32px;
+    list-style-type: none;
+    padding-left: 0;
     text-transform: none;
     font-weight: 400;
 }
 
-/* Social Icons */
+.work-title-list li::before {
+    font-family: "bootstrap-icons";
+    content: "\f138";
+    margin-right: 8px;
+}
+
+/* Social Links */
 .bi {
     margin-right: 0.5em;
 }
+
+.social-links li::before {
+    font-family: "bootstrap-icons";
+    content: "\f144";
+    margin-right: 8px;
+}
+
+.instagram {
+    text-decoration: none;
+    color: black; /* Default color */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.instagram:hover {
+    background: linear-gradient(45deg, #ff7a00, #ff0069, #d300c5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 /* Second Column - Featured */
 .content-column {

@@ -35,9 +35,9 @@ const honorsList = document.getElementById('select-honors')
 accordionButton.addEventListener('click', () => {
   if (honorsList.style.display == 'none') {
     honorsList.style.display = 'block'
-    accordionLabel.innerHTML = '- Select Exhibitions / Honors'
+    accordionLabel.innerHTML = '- Current Favorites'
   } else {
     honorsList.style.display = 'none'
-    accordionLabel.innerHTML = '+ Select Exhibitions / Honors'
+    accordionLabel.innerHTML = '+ Current Favorites'
   }
 })
