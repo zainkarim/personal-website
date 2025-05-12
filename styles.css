@@ -16,6 +16,15 @@ a {
     color: darkblue;
 }
 
+code {
+    font-family: "Monaspace Neon Light", Courier, monospace; /* Use a monospaced font */
+    color: rgb(55, 55, 55); /* Set the text color */
+    background-color: #f8f9fa; /* Set the background color */
+    padding: 4px 6px; /* Add padding for better spacing */
+    border-radius: 2px; /* Add rounded corners */
+    border: 1px solid #e0e0e0; /* Add a border */
+}
+
 .indented-list {
     list-style-type: circle;
     padding-left: 32px;
