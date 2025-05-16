@@ -1,65 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YLJX43GEFY"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-YLJX43GEFY');
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zain karim</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Zain Karim</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
-<body>
-    <header>
-        <nav class="navbar">
-            <div class="nav-left">
-                <a href="index.html">zain karim ⠵</a>
+<body data-page="about">
+  <i id="mobile-menu-button" class="bi bi-three-dots"></i>
+  <div class="container">
+    <div class="nav-column">
+      <h1><a href="index.html">Zain Karim</a></h1>
+      <!-- Navigation Links -->
+      <div id="nav-content" class="full-menu">
+        <ul class="nav-links">
+          <li><a href="index.html">HOME</a></li>
+          </li>
+          <li><a href="art.html">ART</a>
+          </li>
+          <li><a href="about.html">about</a></li>
+          <ol>
+            <div class="social-links">
+              <ol class="work-title-list">
+                <li><a href="https://www.instagram.com/zainkarim_/" target="_blank" rel="noopener noreferrer"
+                    class="instagram">Instagram</a></li>
+                <li><a href="https://github.com/zainkarim" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/zainkarim/" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="zain_karim_resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="mailto:zain@zainkarim.com" target="_blank" rel="noopener noreferrer">Mail</a></li>
+              </ol>
             </div>
-            <div class="nav-right">
-                <a href="about.html">about</a>
-                <a href="photo.html">photography</a>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="about">
-            <div class="about-photo">
-                <img src="images/profile.jpeg" alt="zain karim headshot">
-            </div>
-            <div class="about-content">
-                <p><strong>hi, i'm zain!</strong>
-                <p>i'm a student and photographer with a strong passion for problem solving, fostering creativity through software, 
-                    and exploring the intersection of art and technology.</p>
-                <p>i'm currently studying computer science at <a href="https://cs.utdallas.edu/" style=color:#e87500
-                        target="_blank">the university of texas at dallas</a>. i'm most interested in computer vision,
-                    image processing algorithms, and creative applications of computational photography.</p>
-                <p>in my free time, i enjoy making photographs, cooking pasta, and listening to all types of jazz music.</p>
-                <div class="socials">
-                    <a href="mailto:zain@zainkarim.com">email</a>
-                    <a href="https://github.com/zainkarim" target="_blank">github</a>
-                    <a href="https://linkedin.com/in/zainkarim" target="_blank ">linkedin</a>
-                    <a href="assets/zain_karim_resume.pdf" target="_blank">resume</a>
-                    <a href="https://open.spotify.com/user/zakkarim1" target="_blank" style=color:#1DB954>spotify</a>
-                    <a href="https://www.instagram.com/zainkarim_/" class=instagram target="_blank">instagram</a>
-                </div>
-                <h4 style=margin-bottom:0;>current favorites:</h4>
-                <ul style=margin-top:0;>
-                    <li><strong>musicians:</strong> Alice Coltrane, Sergei Rachmaninoff, Erykah Badu, MJ Lenderman,
-                        Ryuichi Sakamoto</li>
-                    <li><strong>books:</strong> <i>Divine Flashes</i> by Fakhruddin Iraqi, <i>Stories of Your Life and
-                            Others</i> by Ted Chiang, <i>Uncommon Places</i> by Stephen Shore, <i>Never Let Me Go</i> by
-                        Ishiguro Kazuo,<i>The October Country</i> by Ray Bradbury</li>
-                    <li><strong>film/television:</strong><i> Paris, Texas, Severance, Monsters, Inc., About Time, Succession</i></li>
-                </ul>
-            </div>
-        </section>
-    </main>
+          </ol>
+        </ul>
+      </div>
+    </div>
+    <div class="featured-column">
+      <!-- About -->
+      <div class="col-2">
+        <img src="img/profile.jpeg" alt="A black and white photograph of Zain smiling.">
+      </div>
+
+      <div id="info-overview">
+        <p>Zain Karim</p>
+        <p>(he/him)</p>
+        <p>b. 2000, Texas, USA</p>
+      </div>
+      <div id="bio-text">
+        <p>Zain Karim is a student and photographer with a passion for problem-solving, fostering creativity through
+          software,
+          and exploring the intersection of art and technology. Currently studying computer science at the University of
+          Texas
+          at Dallas, his interests focus on computer vision, image processing algorithms, and computational photography.
+        </p>
+        <p>Zain's work spans creative coding projects and visual storytelling, aiming to bridge technical innovation
+          with
+          artistic expression. Whether designing software that interacts with digital images or capturing evocative
+          moments through his lens, he seeks to challenge conventional boundaries between technology and art.
+        </p>
+        <p>When he's not at his computer, Zain enjoys cooking pasta, making photographs, and listening to jazz.
+          He believes in blending creative inspiration with technical expertise to build solutions that are both
+          innovative and human-centered.
+        </p>
+      </div>
+      <div id="honors-container">
+        <button id="accordion-button">
+          <h2 id="accordion-label">+ Current Favorites</h2>
+        </button>
+        <ul id="select-honors" style="display: none">
+          <li><i>Musicians</i><br>Alice Coltrane<br>Sergei Rachmaninoff<br>Erykah Badu<br>MJ Lenderman<br>Ryuichi
+            Sakamoto</li>
+          <li><i>Books</i><br><i>Divine Flashes</i> by Fakhruddin Iraqi<br><i>Stories of Your Life and Others</i> by Ted
+            Chiang<br><i>Uncommon Places</i> by Stephen Shore<br><i>Never Let Me Go</i> by Ishiguro Kazuo<br><i>The
+              October Country</i> by Ray Bradbury
+          <li><i>Film/Television</i><br>Paris, Texas<br>Severance<br>Monsters, Inc.<br>About
+            Time<br>Succession
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>

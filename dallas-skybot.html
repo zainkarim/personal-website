@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@dallas_skybot — Zain Karim</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <i id="mobile-menu-button" class="bi bi-three-dots"></i>
+  <div class="container">
+    <div class="nav-column">
+      <h1><a href="index.html">Zain Karim</a></h1>
+      <!-- Navigation Links -->
+      <div id="nav-content" class="full-menu">
+        <ul class="nav-links">
+          <li><a href="index.html">HOME</a></li>
+          <ol class="work-title-list">
+            <li><a href="pixi-cli.html">pixi-cli</a></li>
+            <li><a href="dallas-skybot.html">@dallas_skybot</a></li>
+          </ol>
+          </li>
+          <li><a href="art.html">ART</a>
+          </li>
+          <li><a href="about.html">about</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="content-column">
+      <h2><a href="https://x.com/dallas_skybot" class="styled-link" target="_blank">@dallas_skybot</a></h2>
+      <p>2023</p>
+      <p>Dallas SkyBot is an automated application that captures the color of the sky above the Dallas skyline every 30
+        minutes. Inspired by Michael Bodge's <a href="https://nskyc.com/" class="styled-link" target="_blank">NSKYC</a>
+        project, it
+        is an artistic and technical experiment that merges data capture, image processing, and visual storytelling.</p>
+      <p>At its core, Dallas SkyBot leverages a livestream of the Dallas skyline to capture a screenshot every half
+        hour.
+        After each capture, the image undergoes minor enhancements to optimize brightness, contrast, and saturation,
+        ensuring
+        the sky's colors are accurately represented. The application then isolates the sky region, analyzing its average
+        color value. This value is cross-referenced against a Pantone color database to find the closest match.</p>
+      <p>
+        Once identified, the application generates an image with a solid background matching the sky's average color,
+        overlaying the Pantone color name and hex code. This color image, alongside the original skyline capture, is
+        then tweeted to create an ongoing visual archive.</p>
+      <p>Dallas SkyBot was created to be an evolving piece of digital art.
+        It serves as a love letter to the city I grew up in and is driven by a fascination with how data extracted from
+        the natural world can be transformed into
+        creative expression.</p>
+      <blockquote class="twitter-tweet twitter-container">
+        <p lang="zxx" dir="ltr"><a href="https://t.co/Eou5Vwzv9f">pic.twitter.com/Eou5Vwzv9f</a></p>&mdash;
+        dallas skybot (@dallas_skybot) <a
+          href="https://twitter.com/dallas_skybot/status/1779321267490799718?ref_src=twsrc%5Etfw">April 14,
+          2024</a>
+      </blockquote>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>

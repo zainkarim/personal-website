@@ -1,93 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YLJX43GEFY"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-YLJX43GEFY');
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zain karim</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home — Zain Karim</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="nav-left">
-                <a href="index.html">zain karim ⠵</a>
-            </div>
-            <div class="nav-right">
-                <a href="about.html">about</a>
-                <a href="photo.html">photography</a>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="intro">
-            <p>
-                hello! i am a student and photographer with a strong passion for problem solving, 
-                fostering creativity through software, and exploring the intersection of art and technology.
-            </p>
-            <p>
-                currently studying computer science @ <a href="https://cs.utdallas.edu/" style=color:#e87500
-                    target="_blank">the university of texas at dallas</a>.
-            </p>
-            <div class="socials">
-                <a href="mailto:zain@zainkarim.com">email</a>
-                <a href="https://github.com/zainkarim" target="_blank">github</a>
-                <a href="https://linkedin.com/in/zainkarim" target="_blank ">linkedin</a>
-                <a href="assets/zain_karim_resume.pdf" target="_blank">resume</a>
-            </div>
-
-        </section>
-
-        <hr>
-
-        <div class="projects">
-            <h4>PROJECTS</h4>
-            <section>
-                <p>
-                    <a href="https://pypi.org/project/pixi-cli" target="_blank"><strong>pixi-cli✨</strong></a>
-                    <br>
-                    pixi-cli is a straightforward, user-friendly command-line utility designed for speedy image
-                    conversion and basic image processing tasks. Convert images across multiple common image formats
-                    such as JPG, PNG, BMP, CSV, and TIFF, make quick and easy edits to your photos, and view rich 
-                    image metadata, all from the convenience of your terminal.
-                </p>
-                <p>
-                    You can read more about pixi-cli <a href="https://github.com/zainkarim/pixi-cli" target="_blank">here</a>, 
-                    or you can jump right in and install it with pip: 
-                    <br>
-                    <code>pip install pixi-cli</code>
-                </p>                
-            </section>
-            <section>
-                <p>
-                    <a href="https://twitter.com/dallas_skybot" target="_blank"><strong>@dallas_skybot</strong></a>
-                    <br>
-                    Dallas Skybot is a Twitter bot that automatically captures, processes, and tweets images from a live
-                    video stream of the Dallas skyline. The bot enhances the images, determines the average color of the sky
-                    above the skyline, matches this color to the closest Pantone color, and tweets the results.
-                <blockquote class="twitter-tweet twitter-container">
-                    <p lang="zxx" dir="ltr"><a href="https://t.co/Eou5Vwzv9f">pic.twitter.com/Eou5Vwzv9f</a></p>&mdash;
-                    dallas skybot (@dallas_skybot) <a
-                        href="https://twitter.com/dallas_skybot/status/1779321267490799718?ref_src=twsrc%5Etfw">April 14,
-                        2024</a>
-                </blockquote>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </p> 
-            </section>
-        </div>
-
-    </main>
+  <i id="mobile-menu-button" class="bi bi-three-dots"></i>
+  <div class="container">
+    <div class="nav-column">
+      <h1><a href="index.html">Zain Karim</a></h1>
+      <!-- Navigation Links -->
+      <div id="nav-content" class="full-menu">
+        <ul class="nav-links">
+          <li><a href="index.html">HOME</a></li>
+          <ol class="work-title-list">
+            <li><a href="pixi-cli.html">pixi-cli</a></li>
+            <li><a href="dallas-skybot.html">@dallas_skybot</a></li>
+          </ol>
+          </li>
+          <li><a href="art.html">ART</a>
+          </li>
+          <li><a href="about.html">about</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="featured-column">
+      <!-- Featured Software Projects -->
+      <div class="featured-proj col-1">
+        <!-- pixi-cli -->
+        <a href="pixi-cli.html">
+          <img src="software/pixi-cli/pixi-cli.gif" alt="pixi-cli">
+          <h2>pixi-cli</h2>
+          <p>2024</p>
+        </a>
+      </div>
+      <!-- dallas skybot -->
+      <div class="featured-proj col-2">
+        <a href="dallas-skybot.html">
+          <img src="software/dallas-skybot/dallas-skybot.png" alt="dallas-skybot">
+          <h2>@dallas_skybot</h2>
+          <p>2023</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
 </body>
 
 </html>
