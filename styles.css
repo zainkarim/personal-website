@@ -137,7 +137,7 @@ body {
 }
 
 .featured-proj {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .col-1 {
@@ -152,6 +152,10 @@ body {
 .col-full {
     margin-left: 0;
     width: 100;
+}
+
+body[data-page="about"] .col-2 img {
+    border: 2px solid black;
 }
 
 .m-image {
@@ -173,7 +177,12 @@ body {
 }
 
 .img-caption {
-    margin-bottom: 32px;
+  text-align: left; /* Align caption text to the left */
+  width: 100%; /* Make the caption span the full width */
+  margin: 10px 0;
+  font-size: 1.1rem;
+  color: #333;
+  padding-left: 5px; /* Slight padding for better readability */
 }
 
 .mind-video-embed {
@@ -184,6 +193,57 @@ body {
 .full-width-video-embed {
     aspect-ratio: 16 / 9;
     width: 100%;
+}
+
+/* Embedded Image Viewer CSS */
+.embedded-image-viewer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.embedded-image-viewer img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+.image-caption {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Arrow Container - Full Width */
+.arrow-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Full width of the content column */
+  margin-top: 20px;
+  position: relative;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  color: black;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.arrow:hover {
+  color: #555;
+}
+
+.arrow.left {
+  margin-left: -5px;
+}
+
+.arrow.right {
+  margin-right: -18px;
 }
 
 /* Mobile */
@@ -199,6 +259,10 @@ body {
 
     .featured-column img {
         width: 100%;
+    }
+
+    .featured-proj {
+        margin-bottom: 50px;
     }
 
     .col-1, .col-2, .col-3 {
