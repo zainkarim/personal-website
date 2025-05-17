@@ -50,7 +50,12 @@
     </div>
 
   </div>
-  <script src="main.js"></script>
+  <script id="dynamic-script"></script>
+  <script>
+    const script = document.createElement('script');
+    script.src = 'main.js?v=' + new Date().getTime();
+    document.getElementById('dynamic-script').appendChild(script);
+  </script>
 </body>
 
 </html>
