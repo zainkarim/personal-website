@@ -140,8 +140,9 @@ document.addEventListener("DOMContentLoaded", function () {
       .catch(error => console.error(`Error loading images for ${pageName}:`, error));
   }
 
-  function nextImage() { showImage(currentIndex + 1); }
-  function prevImage() { showImage(currentIndex - 1); }
+  // Global functions for image navigation
+  window.nextImage = function () { showImage(currentIndex + 1); };
+  window.prevImage = function () { showImage(currentIndex - 1); };
 
   const pageName = window.location.pathname.split('/').pop().replace('.html', '');
   loadImages(pageName);
