@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <ul class="work-title-list">
             <li><a href="gallery.html">Selected Works</a></li>
             <li><a href="night-car.html">Night Car</a></li>
-            <li><a href="people.html">People</a></li>
+            <li><a href="people.html">Portraits</a></li>
           </ul>
           <li><a href="about.html">ABOUT</a></li>
           <ul class="social-links">
