@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <li><a href="pixi-cli.html">pixi-cli</a></li>
             <li><a href="dallas-skybot.html">@dallas_skybot</a></li>
           </ul>
-          <li><a href="art.html">ART</a></li>
+          <li><a href="photos.html">PHOTOS</a></li>
           <ul class="work-title-list">
             <li><a href="gallery.html">Selected Works</a></li>
             <li><a href="night-car.html">Night Car</a></li>
